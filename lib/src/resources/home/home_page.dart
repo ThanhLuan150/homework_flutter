@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:homework_flutter/src/widgets/filter.dart';
 import 'package:homework_flutter/src/widgets/home_app_bar.dart';
+import 'package:homework_flutter/src/widgets/item_poduct_list.dart';
 import 'package:homework_flutter/src/widgets/search_product.dart';
+
 
 class HomePage extends StatelessWidget {
   @override
@@ -43,7 +45,8 @@ class HomePage extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Icon(Icons.lock_clock_outlined, color: Color(0xffffffff)),
+                            Icon(Icons.lock_clock_outlined,
+                                color: Color(0xffffffff)),
                             SizedBox(width: 5),
                             Text(
                               "22h 55m 20s remaining",
@@ -65,25 +68,22 @@ class HomePage extends StatelessWidget {
                         backgroundColor: Color(0xff4392f9),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
-                           side: BorderSide(
-                              color: Colors.white, 
-                              width: 1,           
-                        ),
+                          side: BorderSide(
+                            color: Colors.white,
+                            width: 1,
+                          ),
                         ),
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text('View all',
-                            style : GoogleFonts.montserrat(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 12,
-                            )
-                          ),
-                          Icon(
-                            Icons.arrow_forward ,color: Color(0xffffffff)
-                          )
+                              style: GoogleFonts.montserrat(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 12,
+                              )),
+                          Icon(Icons.arrow_forward, color: Color(0xffffffff))
                         ],
                       ),
                     ),
@@ -92,6 +92,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+          ItemProductList()
         ],
       ),
     );
