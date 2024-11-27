@@ -13,7 +13,7 @@ class LandingPage extends StatelessWidget {
       body: Container(
         color: Colors.white,
         child: Center(
-          child: Image.asset("assets/logo.png"),
+          child: Image.asset("assets/image/logo.png"),
         ),
       ),
     );

@@ -5,17 +5,17 @@ class LandingItems {
     LandingInfo(
       title: "Choose Products",
       description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-      image: "assets/fashion-shop.png",
+      image: "assets/image/fashion-shop.png",
     ),
     LandingInfo(
       title: "Make Payment",
       description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-      image: "assets/Sales-consulting-pana.png",
+      image: "assets/image/Sales-consulting-pana.png",
     ),
     LandingInfo(
       title: "Get Your Order",
       description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-      image: "assets/Shopping.png",
+      image: "assets/image/Shopping.png",
     ),
   ];
 }

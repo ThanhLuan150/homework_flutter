@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:homework_flutter/src/resources/landing/landing_item.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class LandingViewPage extends StatefulWidget {
@@ -11,7 +10,7 @@ class LandingViewPage extends StatefulWidget {
 class _LandingViewPageState extends State<LandingViewPage> {
   final controller = LandingItems();
   final pageController = PageController();
-  int currentPage = 0; 
+  int currentPage = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -31,14 +30,16 @@ class _LandingViewPageState extends State<LandingViewPage> {
                         curve: Curves.easeIn,
                       );
                     },
-                    child: Text(
-                      "Previous" ,
-                      style: GoogleFonts.montserrat(
-                        fontSize: 14,
-                        color : Color(0xffc4c4c4),
-                        fontWeight: FontWeight.bold,
-                      )
-                    ),
+                    child: Text("Previous",
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 14,
+                          color: Color(0xffc4c4c4),
+                          fontVariations: [
+                            FontVariation('wght',
+                                600),
+                          ],
+                        )),
                   )
                 : SizedBox(width: 80),
 
@@ -67,25 +68,31 @@ class _LandingViewPageState extends State<LandingViewPage> {
                         curve: Curves.easeIn,
                       );
                     },
-                    child: Text(
-                      "Next",
-                        style: GoogleFonts.montserrat(
-                        fontSize: 14,
-                        color : Color(0xfff8374b),
-                        fontWeight: FontWeight.bold,
-                      )),
+                    child: Text("Next",
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xfff8374b),
+                          fontVariations: [
+                            FontVariation('wght',
+                                600), 
+                          ],
+                          fontFamily: 'Montserrat',
+                        )),
                   )
                 : TextButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, 'loginPage'); // Navigate to Login page
+                      Navigator.pushNamed(
+                          context, 'loginPage'); // Navigate to Login page
                     },
                     child: Text("Get Started",
-                      style: GoogleFonts.montserrat(
-                        fontSize: 14,
-                        color : Color(0xfff8374b),
-                        fontWeight: FontWeight.bold,
-                      )
-                    ),
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xfff8374b),
+                          fontVariations: [
+                            FontVariation('wght', 600),  
+                          ],
+                          fontFamily: 'Montserrat',
+                        )),
                   ),
           ],
         ),
@@ -95,7 +102,7 @@ class _LandingViewPageState extends State<LandingViewPage> {
         child: PageView.builder(
           onPageChanged: (index) {
             setState(() {
-              currentPage = index; 
+              currentPage = index;
             });
           },
           itemCount: controller.items.length,
@@ -108,19 +115,25 @@ class _LandingViewPageState extends State<LandingViewPage> {
                 SizedBox(height: 15),
                 Text(
                   controller.items[index].title,
-                  style: GoogleFonts.montserrat(
+                  style: TextStyle(
                     color: Color(0xFF000000),
                     fontSize: 24,
-                    fontWeight: FontWeight.bold,
+                    fontVariations: [
+                      FontVariation('wght', 600), 
+                    ],
+                    fontFamily: 'Montserrat',
                   ),
                 ),
                 SizedBox(height: 15),
                 Text(
                   textAlign: TextAlign.center,
                   controller.items[index].description,
-                  style: GoogleFonts.montserrat(
+                  style: TextStyle(
                     color: Color(0xFFA8A8A9),
-                    fontWeight: FontWeight.bold,
+                    fontVariations: [
+                      FontVariation('wght', 600), 
+                    ],
+                    fontFamily: 'Montserrat',
                   ),
                 ),
               ],

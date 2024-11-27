@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,14 +12,18 @@ class LoginPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 80),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 0, 70, 0),
+              const Padding(
+                padding: EdgeInsets.fromLTRB(0, 0, 70, 0),
                 child: Text(
                   "Welcome Back!",
-                  style: GoogleFonts.montserrat(
-                      fontSize: 36,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xff000000)),
+                  style: TextStyle(
+                    fontSize: 36,
+                    color: Color(0xff000000),
+                    fontFamily: 'Montserrat',
+                     fontVariations: [
+                          FontVariation('wght', 700),  
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(height: 40),
@@ -29,10 +33,13 @@ class LoginPage extends StatelessWidget {
                   hintText: "Username or Email",
                   fillColor: Color(0xfff3f3f3),
                   filled: true,
-                  hintStyle: GoogleFonts.montserrat(
+                  hintStyle: const TextStyle(
                     color: Color(0xff676767),
                     fontSize: 14,
-                    fontWeight: FontWeight.w500,
+                    fontVariations: [
+                        FontVariation('wght', 500),
+                    ],
+                    fontFamily: 'Montserrat',
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
@@ -44,9 +51,9 @@ class LoginPage extends StatelessWidget {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                         color: Color(0xff676767),
-                        width: 1.0), // Tùy chỉnh border khi focus
+                        width: 1.0), 
                   ),
                 ),
               ),
@@ -57,24 +64,27 @@ class LoginPage extends StatelessWidget {
                   hintText: "Password",
                   fillColor: Color(0xfff3f3f3),
                   filled: true,
-                  hintStyle: GoogleFonts.montserrat(
+                  hintStyle: const TextStyle(
                     color: Color(0xff676767),
                     fontSize: 14,
-                    fontWeight: FontWeight.w500,
+                   fontVariations: [
+                      FontVariation('wght', 500), 
+                    ],
+                    fontFamily: 'Montserrat',
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Color(0xffa8a8a9)),
+                    borderSide: const BorderSide(color: Color(0xffa8a8a9)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Color(0xffa8a8a9)),
+                    borderSide: const BorderSide(color: Color(0xffa8a8a9)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                         color: Color(0xff676767),
-                        width: 1.0), // Tùy chỉnh border khi focus
+                        width: 1.0), 
                   ),
                   suffixIcon: IconButton(
                     onPressed: () {},
@@ -89,10 +99,15 @@ class LoginPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(context, "forgetPasswordPage");
                   },
-                  child: Text(
+                  child: const Text(
                     "Forgot Password?",
-                    style: GoogleFonts.montserrat(
-                        color: Color(0xfff83758), fontWeight: FontWeight.w400),
+                    style: TextStyle(
+                      color: Color(0xfff83758),
+                     fontVariations: [
+                      FontVariation('wght', 400), 
+                    ],
+                      fontFamily: 'Montserrat',
+                    ),
                   ),
                 ),
               ),
@@ -108,32 +123,39 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                      Navigator.pushNamed(context, "homePage");
+                    Navigator.pushNamed(context, "getStartPage");
                   },
-                  child: Text(
+                  child: const Text(
                     "Login",
-                    style: GoogleFonts.montserrat(
+                    style: TextStyle(
                         fontSize: 20,
                         color: Color(0xffffffff),
-                        fontWeight: FontWeight.w600),
+                       fontVariations: [
+                        FontVariation('wght', 600), 
+                    ],
+                        fontFamily: 'Montserrat',
+                      ),
                   ),
                 ),
               ),
               const SizedBox(height: 24),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "- OR Continue with -",
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.montserrat(
-                          fontSize: 12,
-                          color: Color(0xff575757),
-                          fontWeight: FontWeight.w500),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "- OR Continue with -",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 12,
+                        color: Color(0xff575757),
+                        fontWeight: FontWeight.w500,
+                        fontFamily: 'Montserrat',
+                        fontVariations: [
+                            FontVariation('wght', 500),  
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
               const SizedBox(height: 24),
               Row(
@@ -147,7 +169,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Image.asset('assets/gg.png'),
+                      icon: Image.asset('assets/image/gg.png'),
                       iconSize: 40,
                     ),
                   ),
@@ -160,7 +182,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Image.asset('assets/apple.png'),
+                      icon: Image.asset('assets/image/apple.png'),
                       iconSize: 40,
                     ),
                   ),
@@ -173,7 +195,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Image.asset('assets/facebook.png'),
+                      icon: Image.asset('assets/image/facebook.png'),
                       iconSize: 40,
                     ),
                   ),
@@ -183,23 +205,30 @@ class LoginPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Create An Account ",
-                    style: GoogleFonts.montserrat(
+                    style: TextStyle(
                         fontSize: 14,
                         color: Color(0xff575757),
-                        fontWeight: FontWeight.w400),
+                        fontVariations: [
+                          FontVariation('wght', 400),
+                        ],
+                        fontFamily: 'Montserrat',
+                      ),     
                   ),
                   GestureDetector(
                     onTap: () {
                       Navigator.pushNamed(context, "registerPage");
                     },
-                    child: Text(
+                    child: const Text(
                       "Sign Up",
-                      style: GoogleFonts.montserrat(
+                      style: TextStyle(
                         fontSize: 14,
                         color: Color(0xfff83758),
-                        fontWeight: FontWeight.bold,
+                        fontVariations: [
+                          FontVariation('wght', 600), 
+                          ],
+                        fontFamily: 'Montserrat',
                       ),
                     ),
                   ),

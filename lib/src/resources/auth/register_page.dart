@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class RegisterPage extends StatelessWidget {
+  const RegisterPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,14 +13,19 @@ class RegisterPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 80),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 0, 70, 0),
+              const Padding(
+                padding: EdgeInsets.fromLTRB(0, 0, 70, 0),
                 child: Text(
                   "Create an account",
-                  style: GoogleFonts.montserrat(
-                      fontSize: 36,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xff000000)),
+                  style: TextStyle(
+                    fontSize: 36,
+                    color: Color(0xff000000),
+                    fontFamily: 'Montserrat',
+                    fontVariations: [
+                      FontVariation('wght',
+                          700), 
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(height: 40),
@@ -29,24 +35,28 @@ class RegisterPage extends StatelessWidget {
                   hintText: "Username or Email",
                   fillColor: Color(0xfff3f3f3),
                   filled: true,
-                  hintStyle: GoogleFonts.montserrat(
+                  hintStyle: const TextStyle(
                     color: Color(0xff676767),
                     fontSize: 14,
-                    fontWeight: FontWeight.w500,
+                    fontVariations: [
+                      FontVariation('wght',
+                          500), 
+                    ],
+                    fontFamily: 'Montserrat',
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Color(0xffa8a8a9)),
+                    borderSide: const BorderSide(color: Color(0xffa8a8a9)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Color(0xffa8a8a9)),
+                    borderSide: const BorderSide(color: Color(0xffa8a8a9)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                         color: Color(0xff676767),
-                        width: 1.0), // Tùy chỉnh border khi focus
+                        width: 1.0), 
                   ),
                 ),
               ),
@@ -57,24 +67,28 @@ class RegisterPage extends StatelessWidget {
                   hintText: "Password",
                   fillColor: Color(0xfff3f3f3),
                   filled: true,
-                  hintStyle: GoogleFonts.montserrat(
+                  hintStyle: const TextStyle(
                     color: Color(0xff676767),
                     fontSize: 14,
-                    fontWeight: FontWeight.w500,
+                    fontVariations: [
+                      FontVariation('wght',
+                          500),
+                    ],
+                    fontFamily: 'Montserrat',
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Color(0xffa8a8a9)),
+                    borderSide: const BorderSide(color: Color(0xffa8a8a9)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Color(0xffa8a8a9)),
+                    borderSide: const BorderSide(color: Color(0xffa8a8a9)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                         color: Color(0xff676767),
-                        width: 1.0), // Tùy chỉnh border khi focus
+                        width: 1.0), 
                   ),
                   suffixIcon: IconButton(
                     onPressed: () {},
@@ -87,26 +101,30 @@ class RegisterPage extends StatelessWidget {
                 decoration: InputDecoration(
                   prefixIcon: const Icon(Icons.lock),
                   hintText: "ConfirmPassword",
-                  fillColor: Color(0xfff3f3f3),
+                  fillColor: const Color(0xfff3f3f3),
                   filled: true,
-                  hintStyle: GoogleFonts.montserrat(
+                  hintStyle: const TextStyle(
                     color: Color(0xff676767),
                     fontSize: 14,
-                    fontWeight: FontWeight.w500,
+                    fontVariations: [
+                      FontVariation('wght',
+                          500), 
+                    ],
+                    fontFamily: 'Montserrat',
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Color(0xffa8a8a9)),
+                    borderSide: const BorderSide(color: Color(0xffa8a8a9)),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Color(0xffa8a8a9)),
+                    borderSide: const BorderSide(color: Color(0xffa8a8a9)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                         color: Color(0xff676767),
-                        width: 1.0), // Tùy chỉnh border khi focus
+                        width: 1.0), 
                   ),
                   suffixIcon: IconButton(
                     onPressed: () {},
@@ -115,30 +133,42 @@ class RegisterPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              Wrap(
+              const Wrap(
                 children: [
                   Text(
                     "By click the ",
-                    style: GoogleFonts.montserrat(
+                    style: TextStyle(
                       fontSize: 12,
                       color: Color(0xff676767),
-                      fontWeight: FontWeight.w400,
+                      fontVariations: [
+                        FontVariation('wght',
+                            400), 
+                      ],
+                      fontFamily: 'Montserrat',
                     ),
                   ),
                   Text(
                     "Register",
-                    style: GoogleFonts.montserrat(
+                    style: TextStyle(
                       fontSize: 12,
                       color: Color(0xffff4b26),
-                      fontWeight: FontWeight.w400,
+                      fontVariations: [
+                        FontVariation('wght',
+                            400), 
+                      ],
+                      fontFamily: 'Montserrat',
                     ),
                   ),
                   Text(
                     "button, you agree to the public offer",
-                    style: GoogleFonts.montserrat(
+                    style: TextStyle(
                       fontSize: 12,
                       color: Color(0xff676767),
-                      fontWeight: FontWeight.w400,
+                      fontVariations: [
+                        FontVariation('wght',
+                            400), 
+                      ],
+                      fontFamily: 'Montserrat',
                     ),
                   ),
                 ],
@@ -155,30 +185,38 @@ class RegisterPage extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "Create Account",
-                    style: GoogleFonts.montserrat(
-                        fontSize: 20,
-                        color: Color(0xffffffff),
-                        fontWeight: FontWeight.w600),
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Color(0xffffffff),
+                      fontVariations: [
+                        FontVariation('wght',
+                            600), 
+                      ],
+                      fontFamily: 'Montserrat',
+                    ),
                   ),
                 ),
               ),
               const SizedBox(height: 24),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "- OR Continue with -",
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.montserrat(
-                          fontSize: 12,
-                          color: Color(0xff575757),
-                          fontWeight: FontWeight.w500),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "- OR Continue with -",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Color(0xff575757),
+                      fontVariations: [
+                        FontVariation('wght',
+                            500),
+                      ],
+                      fontFamily: 'Montserrat',
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
               const SizedBox(height: 24),
               Row(
@@ -192,7 +230,7 @@ class RegisterPage extends StatelessWidget {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Image.asset('assets/gg.png'),
+                      icon: Image.asset('assets/image/gg.png'),
                       iconSize: 40,
                     ),
                   ),
@@ -205,7 +243,7 @@ class RegisterPage extends StatelessWidget {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Image.asset('assets/apple.png'),
+                      icon: Image.asset('assets/image/apple.png'),
                       iconSize: 40,
                     ),
                   ),
@@ -218,7 +256,7 @@ class RegisterPage extends StatelessWidget {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Image.asset('assets/facebook.png'),
+                      icon: Image.asset('assets/image/facebook.png'),
                       iconSize: 40,
                     ),
                   ),
@@ -228,23 +266,32 @@ class RegisterPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "I Already Have an Account ",
-                    style: GoogleFonts.montserrat(
-                        fontSize: 14,
-                        color: Color(0xff575757),
-                        fontWeight: FontWeight.w400),
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Color(0xff575757),
+                      fontVariations: [
+                        FontVariation('wght',
+                            400),
+                      ],
+                      fontFamily: 'Montserrat',
+                    ),
                   ),
                   GestureDetector(
                     onTap: () {
                       Navigator.pushNamed(context, "loginPage");
                     },
-                    child: Text(
+                    child: const Text(
                       "Login",
-                      style: GoogleFonts.montserrat(
+                      style: TextStyle(
                         fontSize: 14,
                         color: Color(0xfff83758),
-                        fontWeight: FontWeight.bold,
+                        fontVariations: [
+                          FontVariation('wght',
+                              600),
+                        ],
+                        fontFamily: 'Montserrat',
                       ),
                     ),
                   ),

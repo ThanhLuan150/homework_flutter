@@ -11,12 +11,12 @@ class HomeAppPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children:[
           Container( 
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: Color(0xfff2f2f2)
             ),
-            child: Padding(
-              padding: const EdgeInsets.all(4),
+            child: const Padding(
+              padding: EdgeInsets.all(4),
               child: Icon(
                 Icons.sort, size: 30, color: Color(0xFF323232)
                 ),
@@ -24,9 +24,9 @@ class HomeAppPage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
-            child: Image.asset("assets/logo-homepage.png"),
+            child: Image.asset("assets/image/logo-homepage.png"),
           ),
-          Image.asset("assets/user_image.png")    
+          Image.asset("assets/image/user_image.png")    
         ],
       ),
     );
