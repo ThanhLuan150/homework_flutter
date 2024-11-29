@@ -1,6 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:homework_flutter/src/resources/home/home_page.dart';
+import 'package:homework_flutter/screens/home/home_page.dart';
 
 class BottomTab extends StatefulWidget {
   const BottomTab({super.key});

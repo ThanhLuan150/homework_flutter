@@ -1,5 +1,4 @@
-import 'package:homework_flutter/src/resources/landing/landing_info.dart';
-
+import 'package:homework_flutter/screens/landing/landing_info.dart';
 class LandingItems {
   List<LandingInfo> items = [ 
     LandingInfo(

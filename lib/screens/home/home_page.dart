@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:homework_flutter/src/widgets/filter.dart';
-import 'package:homework_flutter/src/widgets/home_app_bar.dart';
-import 'package:homework_flutter/src/widgets/item_poduct_list.dart';
-import 'package:homework_flutter/src/widgets/item_product_treding.dart';
-import 'package:homework_flutter/src/widgets/search_product.dart';
+import 'package:homework_flutter/commom/widgets/filter.dart';
+import 'package:homework_flutter/commom/widgets/home_app_bar.dart';
+import 'package:homework_flutter/commom/widgets/item_poduct_list.dart';
+import 'package:homework_flutter/commom/widgets/item_product_treding.dart';
+import 'package:homework_flutter/commom/widgets/search_product.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homework_flutter/commom/styles/color.dart';
 
 class Filter extends StatelessWidget {
   @override
@@ -13,7 +14,7 @@ class Filter extends StatelessWidget {
               children: [
                 Container(
                   alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.symmetric(),
+                  margin: const EdgeInsets.symmetric(),
                   child: const Text(
                     "All Featured",
                     style: TextStyle(
@@ -35,7 +36,7 @@ class Filter extends StatelessWidget {
                       label: const Text(
                         "Sort",
                         style: TextStyle(
-                          color: Color(0xff000000),
+                          color: AppColors.darkGrey,
                           fontVariations: [
                             FontVariation('wght', 400),
                           ],
@@ -53,7 +54,7 @@ class Filter extends StatelessWidget {
                             horizontal: 12, vertical: 4),
                         elevation: 0,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6), // Góc bo 6
+                          borderRadius: BorderRadius.circular(6),
                         ),
                       ),
                     ),
@@ -80,7 +81,7 @@ class Filter extends StatelessWidget {
                         backgroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 12, vertical: 8),
-                        elevation: 0, // Loại bỏ bóng
+                        elevation: 0,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6),
                         ),

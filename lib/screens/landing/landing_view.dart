@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:homework_flutter/src/resources/landing/landing_item.dart';
+import 'package:homework_flutter/commom/styles/color.dart';
+import 'package:homework_flutter/screens/landing/landing_item.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class LandingViewPage extends StatefulWidget {
@@ -34,7 +35,7 @@ class _LandingViewPageState extends State<LandingViewPage> {
                         style: TextStyle(
                           fontFamily: 'Montserrat',
                           fontSize: 14,
-                          color: Color(0xffc4c4c4),
+                          color: AppColors.greyLight,
                           fontVariations: [
                             FontVariation('wght',
                                 600),
@@ -55,7 +56,7 @@ class _LandingViewPageState extends State<LandingViewPage> {
               effect: WormEffect(
                 dotHeight: 12,
                 dotWidth: 12,
-                activeDotColor: Color(0xFF17223b),
+                activeDotColor:  AppColors.darkBlue,
               ),
             ),
 

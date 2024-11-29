@@ -12,10 +12,10 @@ class SearchProductPage extends StatelessWidget {
         decoration: InputDecoration(
           prefixIcon: const Icon(Icons.search, color: Color(0xffbbbbbb)),
           hintText: "Search any Product..",
-          fillColor: Color(0xffffffff),
+          fillColor: const Color(0xffffffff),
           filled: true,
           hintStyle: GoogleFonts.montserrat(
-            color: Color(0xffbbbbbb),
+            color: const Color(0xffbbbbbb),
             fontSize: 14,
             fontWeight: FontWeight.w400,
           ),

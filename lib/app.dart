@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:homework_flutter/src/navigation/app_routes.dart';
-
+import 'package:homework_flutter/navigation/app_routes.dart';
 void main() {
   runApp(MyApp());
 }

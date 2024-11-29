@@ -4,8 +4,8 @@ class HomeAppPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xfff9f9f9),
-      padding: EdgeInsets.fromLTRB(15, 20, 10, 10),
+      color: const Color(0xfff9f9f9),
+      padding: const EdgeInsets.fromLTRB(15, 20, 10, 10),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
