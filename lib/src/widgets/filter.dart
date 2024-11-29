@@ -28,7 +28,7 @@ class Filter extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment:
-                      MainAxisAlignment.start, // Đặt các nút về bên trái
+                      MainAxisAlignment.start, 
                   children: [
                     ElevatedButton.icon(
                       onPressed: () {},
@@ -82,7 +82,7 @@ class Filter extends StatelessWidget {
                             horizontal: 12, vertical: 8),
                         elevation: 0, // Loại bỏ bóng
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6), // Góc bo 6
+                          borderRadius: BorderRadius.circular(6),
                         ),
                       ),
                     ),

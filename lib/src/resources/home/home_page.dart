@@ -5,6 +5,8 @@ import 'package:homework_flutter/src/widgets/item_poduct_list.dart';
 import 'package:homework_flutter/src/widgets/item_product_treding.dart';
 import 'package:homework_flutter/src/widgets/search_product.dart';
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -112,7 +114,7 @@ class HomePage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Image.asset("assets/image/offer.png", width: 50, height: 50), // Adjust size if necessary
+                    Image.asset("assets/image/offer.png", width: 50, height: 50),
                     const SizedBox(width: 10), // Add spacing
                     const Expanded( // Wrap the Column in Expanded
                       child: Column(

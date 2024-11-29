@@ -6,7 +6,6 @@ import 'package:homework_flutter/src/resources/auth/register_page.dart';
 import 'package:homework_flutter/src/resources/get_start/get_start.dart';
 import 'package:homework_flutter/src/resources/landing/landing_page.dart';
 import 'package:homework_flutter/src/resources/landing/landing_view.dart';
-import 'package:homework_flutter/main.dart';
 
 class AppRoutes {
   static Map<String, WidgetBuilder> getRoutes() {

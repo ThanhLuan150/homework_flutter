@@ -88,7 +88,7 @@ class _BottomTabState extends State<BottomTab> {
   Widget _buildIcon(IconData icon, int index) {
     return Icon(
       icon,
-      color: _selectedIndex == index ? Colors.red : Colors.black,
+      color: _selectedIndex == index ? Colors.red : Colors.black, 
     );
   }
 
