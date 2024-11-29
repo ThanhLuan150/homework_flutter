@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homework_flutter/commom/styles/color.dart';
 class ForgetPasswordPage extends StatelessWidget {
   const ForgetPasswordPage({super.key});
 
@@ -18,7 +19,7 @@ class ForgetPasswordPage extends StatelessWidget {
                   "Forget Password ?",
                 style: TextStyle(
                     fontSize: 36,
-                    color: Color(0xff000000),
+                    color: AppColors.black,
                     fontFamily: 'Montserrat',
                      fontVariations: [
                           FontVariation('wght', 700), 

@@ -77,6 +77,7 @@ class ItemProductList extends StatelessWidget {
                                     "₹2499",
                                     style: TextStyle(
                                       fontSize: 11,
+                                      decoration: TextDecoration.lineThrough,
                                       fontVariations: [
                                         FontVariation('wght', 300), 
                                         ],

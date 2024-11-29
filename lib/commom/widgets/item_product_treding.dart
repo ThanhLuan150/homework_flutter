@@ -64,6 +64,7 @@ class ItemProductListTrending extends StatelessWidget {
                                     "₹1599",
                                     style: TextStyle(
                                       fontSize: 11,
+                                      decoration: TextDecoration.lineThrough,
                                       fontVariations: [
                                         FontVariation('wght', 300), 
                                         ],

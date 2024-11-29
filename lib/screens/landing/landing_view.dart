@@ -17,7 +17,7 @@ class _LandingViewPageState extends State<LandingViewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomSheet: Container(
-        color: Colors.white,
+        color: AppColors.white,
         padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -88,7 +88,7 @@ class _LandingViewPageState extends State<LandingViewPage> {
                     child: Text("Get Started",
                         style: TextStyle(
                           fontSize: 14,
-                          color: Color(0xfff8374b),
+                          color: AppColors.red,
                           fontVariations: [
                             FontVariation('wght', 600),  
                           ],
@@ -117,7 +117,7 @@ class _LandingViewPageState extends State<LandingViewPage> {
                 Text(
                   controller.items[index].title,
                   style: TextStyle(
-                    color: Color(0xFF000000),
+                    color: AppColors.black,
                     fontSize: 24,
                     fontVariations: [
                       FontVariation('wght', 600), 
@@ -130,7 +130,7 @@ class _LandingViewPageState extends State<LandingViewPage> {
                   textAlign: TextAlign.center,
                   controller.items[index].description,
                   style: TextStyle(
-                    color: Color(0xFFA8A8A9),
+                    color: AppColors.greyMedium,
                     fontVariations: [
                       FontVariation('wght', 600), 
                     ],
